@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ACBaseViewController.h"
 
-@interface ACFormViewController : ACBaseViewController <UITextFieldDelegate>
+@interface ACFormViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, assign) UITextField *activeField;
 
 @end
